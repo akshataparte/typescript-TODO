@@ -1,0 +1,98 @@
+
+// array can containe only string
+// let hobbies:string[];
+// tuple
+// let role: [number,string];
+// role = [5,'5'];
+// not recomended way to define object because object can contain string , number , boolean
+// first letter capital of type 
+// type Person = {
+// name:string;
+// age?:number; // with question mark we make property optional
+// }
+
+// let person : Person ={
+//   name:'aksjsj', 
+// }
+
+// when we want aaray of person object
+// let lostOfPeople:Person[];
+
+// when we want our variable to contain string and number both
+// let age : number | string; //union type 
+
+// not better way to define function 
+// let printName :function;
+
+//better way to define functionm and return type is void that means it is not returning anything.. void return undefined
+// never does not return anything
+// let printName : (name:string) =>void;
+
+// if you want your variable to have any type we can use any but not recommnded because why would we use 
+// typescript if we want to put any type of variable 
+
+// better way to define any type without using any
+// let personeName : unknown;
+
+// there are two types of aliases one is type and second is interface
+// interface Person {
+// name:string;
+// age?:number; // with question mark we make property optional
+// }
+
+
+// when we want to use X type into Y type 
+// type X = {
+//   a:string;
+//   b:number;
+// }
+
+// type Y = X &{
+//   c : string;
+//   d: number;
+// }
+
+// let y : Y = {
+//   a : 'aas',
+// b:2,
+// c : 'sasas',
+// d:42,
+
+// }
+
+// with interface
+
+// interface Person {
+// name:string;
+// age?:number; // with question mark we make property optional
+// }
+
+// interface Guy extends Person{
+//   profession: string
+// }
+
+
+// extending type with interface
+
+// interface Person {
+// name:string;
+// age?:number; // with question mark we make property optional
+// }
+
+// type X = Person &{
+//   a:string;
+//   b:number;
+// }
+
+// extending interface with type
+
+  type X = {
+    a:string;
+    b:number;
+  }
+  
+interface Person extends X {
+  name:string;
+  age?:number; // with question mark we make property optional
+  }
+  
